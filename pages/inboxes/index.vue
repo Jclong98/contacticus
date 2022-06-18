@@ -31,7 +31,7 @@ const { inboxes, deleteInbox } = useInboxes()
         </footer>
       </div>
 
-      <p v-if="inboxes.length < 1">
+      <p v-if="inboxes.length < 1" class="col-span-full">
         Click "Create Inbox" to create a new inbox.
       </p>
     </div>

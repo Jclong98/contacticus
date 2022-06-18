@@ -44,7 +44,7 @@ export default defineHandler(async (event) => {
   // create a new submission and get an id from the database
   const { data: submissionData, error: submissionError } = await supabase
     .from('submissions')
-    .insert(submission)
+    .insert({ inbox_id })
 
   const { id: submission_id } = submissionData[0]
 
