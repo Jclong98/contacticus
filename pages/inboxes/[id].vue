@@ -31,7 +31,8 @@ const { submissions, _inboxData } = useInbox(inboxId)
   </div>
 </template>
 
-<style>
+<style scoped>
+.list-move,
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;
